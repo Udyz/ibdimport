@@ -1,5 +1,5 @@
 # ibdimport
-Mysql ibd Old data to ibd New data
+MYSQL Restore Data from .FRM and .IBD Files
 
 
 - frmdump
