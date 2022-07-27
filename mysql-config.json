@@ -4,6 +4,6 @@
 	"user": "root",
 	"password": "",
 	"database": "nsa.gov",
-	"dataoldibd_path": ".\\data_old",
-	"datanewibd_path": "\\path\\to\\data_new"
+	"dataoldibd_path": ".\\ibdold",
+	"datanewibd_path": "\\path\\to\\mysqlserver\\data"
 }
