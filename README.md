@@ -10,8 +10,8 @@ for tbl in `ls -1 /path/to/frmfile/*.frm`; do ./dbsake frmdump $tbl | sed "s/tim
 ```
 - ibdimport
 ```
-mkdir data_new
+mkdir oldibd
 Config mysql_config.json
-copy file from old ibd data to data_new
+copy file old.ibd data to oldibd folder
 python3 ibdimport.py then chill with pain
 ```
