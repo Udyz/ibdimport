@@ -6,7 +6,7 @@ MYSQL Restore Data from .FRM and .IBD Files
 ```
 curl -s get.dbsake.net > dbsake
 chmod u+x dbsake
-for tbl in `ls -1 /path/to/frmfile/*.frm`; do ./dbsake frmdump $tbl | sed "s/timestamp DEFAULT NULL/timestamp NULL DEFAULT NULL/g" | sed "s/TIMESTAMP DEFAULT NULL/TIMESTAMP NULL DEFAULT NULL/g" | mysql -h 'host' -u 'yourusername' --password='' 'database'; echo $tbl; done;
+for tbl in `ls -1 /path/to/frmfile/*.frm`; do ./dbsake frmdump $tbl | mysql -h 'host' -u 'yourusername' --password='' 'database'; echo $tbl; done;
 ```
 - ibdimport
 ```
